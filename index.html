@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Folclore Brasileiro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fas fa-feather-alt"></i>
+            <h1>Folclore Brasil</h1>
+        </div>
+        <nav>
+            <a href="#" class="active" data-filtro="todos"><i class="fas fa-home"></i> Todos</a>
+            <a href="#" data-filtro="norte"><i class="fas fa-tree"></i> Norte</a>
+            <a href="#" data-filtro="nordeste"><i class="fas fa-sun"></i> Nordeste</a>
+            <a href="#" data-filtro="centro-oeste"><i class="fas fa-mountain"></i> Centro-Oeste</a>
+            <a href="#" data-filtro="sudeste"><i class="fas fa-city"></i> Sudeste</a>
+            <a href="#" data-filtro="sul"><i class="fas fa-water"></i> Sul</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Encantos &amp; <span>Mistérios</span></h2>
+        <p>Conheça as lendas, criaturas e histórias que moldam a alma do Brasil. De norte a sul, um universo mágico espera por você.</p>
+        <a href="#" class="btn-hero" id="btnExplorar"><i class="fas fa-compass"></i> Explorar lendas</a>
+    </section>
+
+    <div class="filtros" id="filtrosContainer">
+        <button class="ativo" data-filtro="todos"><i class="fas fa-globe-americas"></i> Todos</button>
+        <button data-filtro="norte"><i class="fas fa-tree"></i> Norte</button>
+        <button data-filtro="nordeste"><i class="fas fa-sun"></i> Nordeste</button>
+        <button data-filtro="centro-oeste"><i class="fas fa-mountain"></i> Centro-Oeste</button>
+        <button data-filtro="sudeste"><i class="fas fa-city"></i> Sudeste</button>
+        <button data-filtro="sul"><i class="fas fa-water"></i> Sul</button>
+    </div>
+
+    <main class="container">
+        <div id="loading" style="text-align:center; padding:3rem;">
+            <i class="fas fa-spinner fa-pulse fa-3x" style="color: var(--verde-floresta);"></i>
+            <p style="margin-top:1rem;">Carregando lendas...</p>
+        </div>
+        <div class="grid" id="gridCards" style="display:none;"></div>
+    </main>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <div class="modal-img" id="modalImg" style="background-image: url('');">
+                <span class="modal-tag" id="modalTag">Lenda</span>
+                <button class="modal-fechar" id="modalFechar">&times;</button>
+            </div>
+            <div class="modal-conteudo">
+                <h2 id="modalTitulo">Título</h2>
+                <div class="modal-regiao" id="modalRegiao">Região</div>
+                <p id="modalDescricao">Descrição</p>
+                <div class="modal-curiosidade" id="modalCuriosidade">Curiosidade</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="redes">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-spotify"></i></a>
+        </div>
+        <p>🌿 Folclore Brasil — Preservando a memória e a magia do povo brasileiro.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem;">&copy; 2026 · Feito com <i class="fas fa-heart" style="color: #f9a825;"></i> e muito axé</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
