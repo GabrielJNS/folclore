@@ -247,7 +247,7 @@ const lendas = [
         tag: 'Fogo',
         descricao: 'No Sul, o Boitatá é visto como uma cobra de fogo que protege os campos contra incêndios e invasores. Os gaúchos acreditam que ele aparece antes de temporais para avisar sobre perigos iminentes. A lenda do Boitatá no Sul tem raízes nas tradições indígenas e também nas crenças dos tropeiros. Ele é descrito como uma cobra de fogo que corre pelos campos, deixando um rastro de chamas. Dizem que sua visão é tão aguçada que ele pode ver a quilômetros de distância, e que sua presença é um sinal de que a natureza está em equilíbrio. Muitos agricultores afirmam ter visto o Boitatá em noites de tempestade, e acreditam que ele afasta os raios e as queimadas. A lenda é uma das mais importantes para a preservação dos campos e das florestas no Sul.',
         curiosidade: 'Os gaúchos acreditam que ele aparece antes de temporais para avisar sobre perigos. Dizem que o Boitatá é invulnerável ao fogo e que sua pele é feita de chamas.',
-        imagem: 'img/boitata-sul.jpg'
+        imagem: 'img/boitata.jpg'
     },
     {
         id: 26,
