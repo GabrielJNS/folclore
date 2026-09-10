@@ -73,8 +73,9 @@ header {
     letter-spacing: 1px;
     background: linear-gradient(to right, #f9a825, #ffca28);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: none;
+    color: transparent;
 }
 
 nav {
@@ -245,16 +246,23 @@ nav a i {
 }
 
 .card-img {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
+    height: 220px;
     position: relative;
-    transition: var(--transicao);
-    background-color: #d9d0c0;
+    overflow: hidden;
+    background: linear-gradient(135deg, #d9d0c0, #f0ebe0);
 }
 
-.card:hover .card-img {
-    transform: scale(1.02);
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    transition: transform var(--transicao);
+}
+
+.card:hover .card-img img {
+    transform: scale(1.08);
 }
 
 .card-tag {
@@ -263,13 +271,14 @@ nav a i {
     left: 14px;
     background: rgba(30, 74, 43, 0.85);
     color: #fff;
-    padding: 0.2rem 1rem;
+    padding: 0.25rem 1rem;
     border-radius: 40px;
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.5px;
     backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 2;
 }
 
 .card-tag i {
@@ -355,7 +364,7 @@ nav a i {
 
 .modal {
     background: #fffdf7;
-    max-width: 720px;
+    max-width: 780px;
     width: 100%;
     border-radius: var(--borda-arredondada);
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
@@ -367,11 +376,18 @@ nav a i {
 }
 
 .modal-img {
-    height: 240px;
-    background-size: cover;
-    background-position: center;
+    height: 320px;
     position: relative;
-    background-color: #d9d0c0;
+    overflow: hidden;
+    background: linear-gradient(135deg, #d9d0c0, #f0ebe0);
+}
+
+.modal-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
 }
 
 .modal-img .modal-tag {
@@ -385,6 +401,7 @@ nav a i {
     font-weight: 700;
     font-size: 0.8rem;
     backdrop-filter: blur(4px);
+    z-index: 2;
 }
 
 .modal-fechar {
@@ -404,6 +421,7 @@ nav a i {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 3;
 }
 
 .modal-fechar:hover {
@@ -435,8 +453,10 @@ nav a i {
 
 .modal-conteudo p {
     color: #2d2d2d;
-    line-height: 1.8;
-    margin-bottom: 0.8rem;
+    line-height: 1.9;
+    margin-bottom: 0.9rem;
+    text-align: justify;
+    font-size: 1rem;
 }
 
 .modal-conteudo .modal-curiosidade {
@@ -446,6 +466,7 @@ nav a i {
     border-left: 6px solid var(--amarelo-sol);
     margin-top: 1rem;
     font-style: italic;
+    color: #4a3a2a;
 }
 
 footer {
@@ -511,8 +532,14 @@ footer p {
         grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
         gap: 1.2rem;
     }
+    .card-img {
+        height: 180px;
+    }
     .modal {
         max-height: 95vh;
+    }
+    .modal-img {
+        height: 220px;
     }
     .modal-conteudo {
         padding: 1.2rem;
