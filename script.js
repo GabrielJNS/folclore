@@ -227,7 +227,7 @@ const lendas = [
         tag: 'Travesso',
         descricao: 'No Sul, o Saci-Pererê é conhecido por assustar tropeiros e esconder objetos nas fazendas. Sua risada ecoa nos campos de erva-mate, e ele é visto como um duende que protege os animais e as plantações. A lenda do Saci no Sul tem variações em relação à versão do Norte: aqui ele é descrito como um menino de cabelos vermelhos e pele clara, que usa um gorro de lã e fuma cachimbo. Ele é um brincalhão, mas também pode ser vingativo se for provocado. Muitos agricultores deixam oferendas de fumo e doces para ele, para que ele proteja as colheitas. O Saci do Sul também é associado aos redemoinhos de vento que surgem nos campos abertos, e acredita-se que ele possa ser capturado com uma peneira ou um rosário.',
         curiosidade: 'No Sul, ele é frequentemente associado aos redemoinhos que surgem nos campos abertos. Dizem que, se você vir um redemoinho, deve jogar um punhado de sal ou uma peneira para prender o Saci.',
-        imagem: 'img/saci-perere-sul.jpg'
+        imagem: 'img/saci-perere.jpg'
     },
     {
         id: 24,
@@ -257,7 +257,7 @@ const lendas = [
         tag: 'Assustadora',
         descricao: 'No Sudeste, a Cuca é representada como uma bruxa que rouba crianças, mas também como uma figura folclórica das festas juninas. Ela é descrita como uma mulher velha com cabelos brancos e olhos vermelhos, que ronda as casas durante a noite em busca de crianças desobedientes. A lenda da Cuca no Sudeste é muito parecida com a do Nordeste, mas com algumas variações: aqui, ela é associada ao fogo e à noite de São João, onde as fogueiras são acesas para espantá-la. Muitos acreditam que a Cuca é a mulher do Saci, e que ela o ajuda em suas travessuras. Dizem que, para se proteger, é preciso dormir com uma vela acesa ou carregar um ramo de arruda. A Cuca é uma das personagens mais temidas, mas também uma das mais queridas, por sua ligação com as festas populares.',
         curiosidade: 'Em algumas regiões, ela é confundida com a "Bruxa do Saci". Dizem que ela só aparece em noites de sexta-feira e que seu canto é ouvido por toda a vizinhança.',
-        imagem: 'img/cuca-sudeste.jpg'
+        imagem: 'img/cuca.jpg'
     },
     {
         id: 27,
@@ -267,7 +267,7 @@ const lendas = [
         tag: 'Mítico',
         descricao: 'No Centro-Oeste, a lenda do Negrinho do Pastoreio é muito forte entre os peões e fazendeiros. Ele é visto como um protetor dos cavalos e dos animais, e muitos acreditam que ele aparece em noites de lua cheia para ajudar os viajantes perdidos. A lenda é a mesma do Nordeste, mas com elementos regionais: aqui, o Negrinho é descrito como um menino de pele escura, vestido com roupas de couro, montado em um cavalo branco. Ele é considerado um santo popular, e muitas pessoas acendem velas e deixam oferendas de fumo e doces para ele em encruzilhadas. Dizem que ele é muito generoso com aqueles que o ajudam, mas que também pode ser vingativo se for provocado. A lenda do Negrinho do Pastoreio é uma das mais emocionantes do folclore, simbolizando a luta contra a injustiça e a opressão.',
         curiosidade: 'Muitos fazendeiros deixam oferendas de fumo e doces para ele. Dizem que, se você estiver perdido, ele pode aparecer montado em seu cavalo branco para guiá-lo para casa.',
-        imagem: 'img/negrinho-pastoreio-centro.jpg'
+        imagem: 'img/negrinho-pastoreio.jpg'
     }
 ];
 
